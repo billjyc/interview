@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+	Implement a hashtable with multithread handler
+*/
 public class ImplementHashTable<K,V> {
 	Entry<K,V>[] entries;
 	int capacity;
