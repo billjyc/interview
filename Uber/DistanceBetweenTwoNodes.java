@@ -20,8 +20,8 @@ public class Solution {
 
 		int left = helper(node, ancestor.left);
 		int right = helper(node, ancestor.right);
-		if(left == -1) return right + 1;
-		if(right == -1) return left + 1;
+		if(right != -1) return right + 1;
+		if(left != -1) return left + 1;
 		return -1;
 	}
 
